@@ -24,4 +24,19 @@ According to Jack Spirko, the bullish case for teachers pensions owning bitcoin 
 1 [Bitcoin: A Peer To Peer Electronic Cash System, by Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
 
 2[Trusted Third Parties Are Security Holes, by Nick Szabo](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/ttps.html)
-  
+
+
+₿logging ₿itcoin
+[846,397](https://timechaincalendar.com/en/block/846397)
+[debtclock](https://www.usdebtclock.org/)
+🧡Support this blog with the [Value 4 Value model](https://value4value.info/).
+⚡[Zap Me](w3.do/y8BeR-pG)
+🍐[Join my Keet Room](https://habla.news/u/blog@bloggingbitcoin.store/keet-room)
+🛒[Shop my Nostr Store](nostr:npub1wkljx5c6a8uccc5etws8ry0y3r4dgavh2dcav0tal4rtmcdl4z2sfu5u0t)
+🛒[Shop The Elliptic Curve Economy]([https://habla.news/u/bloggingbitcoin@iris.to/shop-the-bitcoin-circular-economy/
+
+https://blogging-bitcoin.com/pensions-vs-plebs/
+http://57iaq47hx4om2kqgbrub22msop4r7pq34xla3ho57wuvi763ffjkeoqd.onionpensions-vs-plebs/
+
+A
+
