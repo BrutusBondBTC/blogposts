@@ -1,7 +1,7 @@
 
 # The Lightning Network
 
-(3rd Draft)
+(4th Draft)
 
 ["Bitcoin isn't currently practical for very small micropayments. Not for things like pay per search or per page view without an aggregating mechanism, not things needing to pay less than 0.01. The dust spam limit is a first try at intentionally trying to prevent overly small micropayments like that. Bitcoin is practical for smaller transactions than are practical with existing payment methods. Small enough to include what you might call the top of the micropayment range. But it doesn't claim to be practical for arbitrarily small micropayments."](https://bitcointalk.org/index.php?topic=287.msg7524#msg7524)
 
@@ -47,25 +47,14 @@ If you're just shitposting on nostr and earn a few thousand sats per month, [min
 
 ![lnaddresses](https://i.nostr.build/romm3.png)
 
-I cannot recommend any one wallet. I have my own preferences. The issue is custodial wallets get taken down or bugs are found, or maybe fee increases make awesome wallets less useful. You should do your own research. I recommend starting your quest for a lightning wallet here: https://lightningaddress.com. In this section I will give my best shot at explaining the advantages and disadvantages of each of these wallets.
+I cannot recommend any one wallet. I have my own preferences. The issue is custodial wallets get taken down or bugs are found, or maybe fee increases make awesome wallets less useful. You should do your own research. I recommend starting your quest for a lightning wallet here: https://lightningaddress.com. In this section I will give my best shot at explaining the advantages and disadvantages of some of these wallets. I have not tried them all. Some of them are geared for other countries, but here are some of the wallets on lightning address.com that I have used.
 
-
-### Zebedee
-Games
 
 ### BTCPay
 Great Fpor Stores Woo Commerce support Create Youw Own Store One Click solution
 
-### LNMArkets
 
-Never used
 
-### Bipa
-Never Used
-
-### FastBotcpoms
-
-Never used
 
 ### Spark Wallet
 Ran it on linux
@@ -76,54 +65,58 @@ Ran it on linux
 I loved this wallet. I had it on telegram for years and was able to use the API with [LNBits](https://lnbits.com/)
 
 ### Blink
+Blink is an interesting wallet designed for circular economies. One thing that is interesting about this wallet is the [stablesats](#) feature. Stablesats are a bitcoin dollar derivative. This can be helpful for those who don't like to stomach the bitcoin/USD price swings, but still don't want to use banks.
 
 ### GetAlby
+Get Alby has a great custodial wallet that allows you to login to nostr with the click of a button. You also get a neat lightning address and no KYC is required. Unfortunately, you need an invite code. On the birght side, they are working on a self custodial solution that is in bet testing. 
 
 
 ### Wallet of Satoshi
-
-### Noah
-
-### Bitnob
-
-
-### Bookmark
-
-### Satoshi Lightning
+Wallet of Satoshi is the easiest way to set up a bitcon wallet. The propblem is they have left the US market. You can no longer download the wallet on Google Play or the App Store with a US IP address.
 
 
 ### Stacker News
+Stacker News is a website where people post articles and send sats to authors of those articles. I should use it more to be quite honest. They give you a custodial lighting address easily though.
 
-
-
-### NiceHash
-
-
-
-#### Accept Bitcoin Like Paper Cash
 
 
 ### Coinos
+Coinos is great for onbaording merchants. It is custodial but it is very easy to sweep the funds into your own wallet and it doesn't reqyuire any more hardware. It is better if you print receiepts and treat it like cash for accounting purposes. You can also download the transactions from the app. This way, you have a record of how much you got in income to tell the IRS, but without the danger of giving up KYC information. If you never spend these sats, you never need to pay capital gains tax anyway, right? Again, I'm not an accountant or a lawyer, but this is my layman point of view.
 
-TODO: Get paper machine required to accept bitcoin like cash money.
+
  **Coinos Video**
  https://flare.pub/w/naddr1qqr47mttdap5jkgpzpmhxue69uhkummnw3ezuamfdejsygr4hu34xxhflxxx9x2m5pcereygat28t96nw8tr6l0ag677r0agj5psgqqqskas3l7q2j
 
-I do not know if the powers that be think using bitcoin on the lightning network is legal or illegal. I do know that [privacy is necessary for an open society](#). If we wish to maintain an [open society](https://en.wikipedia.org/wiki/The_Open_Society_and_Its_Enemies), we must preserve privacy. Lightning is a step in the right direction, but it is not 200 proof private. It will give you privacy from the banks and credit cards though.Do you want corporations to know everything you buy? But I'm not doing anything wrong so I don't have anything to hide. Even if you don't shop dildos.com, bullets.com, or arbortions.com, this informatioin may still be used against you. Everytime you swipe your card, a bank gets information to sale. Everytime you buy trinket on Amazon, a bank sells an ad for that trinket like an angel gets it's wings everytime a bell rings. The lightning network fixes this.
+### What About Regulatory Concerns?
+
+I do not know if the powers that be think using bitcoin on the lightning network is legal or illegal. I do know that [privacy is necessary for an open society](#). If we wish to maintain an [open society](https://en.wikipedia.org/wiki/The_Open_Society_and_Its_Enemies), we must preserve privacy. Lightning is a step in the right direction, but it is not 200 proof private. It will give you privacy from the banks and credit cards though. Do you want corporations to know everything you buy? But I'm not doing anything wrong so I don't have anything to hide. Even if you don't shop dildos.com, bullets.com, or abortions.com, this information may still be used against you. Imagine how easy it would be to find every person by searching for the people who buy the most Kosher or Halal food. Nobody cares about privacy until it is too late.
+
+Even if we assume humans will never go full on tribal again, everytime you swipe your card, a bank gets more information. This information is used against you by advertisers trying to get you to spend more money than you otherwise would have. If ads didn't work, why would they be so valuable? Everytime you buy trinket on Amazon, a bank sells an ad for that trinket like an angel gets it's wings everytime a bell rings. The lightning network may not be totally private, but it sure is better than credit cards.  Credit carreds are designed to get you to spend more money. If you spend more money, you save less sats. When you spend sats, you sure think twice about it.
 
 
-
-We should use it anyway, especially in a world so preoccupied with identity politics. In "A Letter From A Birmingham Jail," Martin Luther King Jr. wrote:
+Bitcoin is freedom money. In "A Letter From A Birmingham Jail," Martin Luther King Jr. wrote:
  
 `"I would be the first to advocate obeying just laws. One has not only a legal but a moral responsibility to obey just laws. Conversely, one has a moral responsibility to disobey unjust laws. I would agree with St. Augustine that 'an unjust law is no law at all."`
 
 ![MLKJr](http://cdn.history.com/sites/2/2014/01/mlk-in-birmingham-jail.jpg)
-Martin Luther King Jr. is the quintessential example as to why privacy is necessary in the electronic age. You cannot hide your identity in meatspace. [J. Edgar Hoover prohibited Martin Luther King Jr.'s privacy](https://time.com/5930571/martin-luther-king-jr-fbi/). **Alphabet government organizations like to watch protestors**. CBDC's might be a political talking point, but credit cards give governments all the data they need to track protestors. 
+Martin Luther King Jr. is the quintessential example as to why privacy is necessary in the electronic age. You cannot hide your identity in meatspace. [J. Edgar Hoover prohibited Martin Luther King Jr.'s privacy](https://time.com/5930571/martin-luther-king-jr-fbi/). **Alphabet government organizations like to watch protesters**. [In some countries, they like to shoot protestors](#).CBDC's might be a political talking point, but credit cards give governments all the data they need to track protesters. 
 
-People often think people wearing masks are suspicious.  They assume they must be doing something wrong, but the reality is--People judge you based on your appearance. If you don't wear the right clothes, drive the right car, have the right gentalia, the right pigmentation, political ideology, or nationality--You could be labeled a persona non-grata--banished from a portion of society.
+People often think [people wearing masks are suspicious(#).  They assume they must be doing something wrong, but the reality is--People judge you based on your appearance. If you don't wear the right clothes, drive the right car, the right junk in your underware, the right pigmentation, political ideology, or nationality--You could be labeled a persona non-grata--banished from society.
 
-"But I didn't do anything wrong so I have nothing to hide." Martin Luther King Jr. was arrested because the powers that be thought he did do something wrong, leading a Good Friday Demonstration, not because he had something to hide. He did not hide his identity. How could he given the issues he protested? He wanted the right to sit in a restaurant and pay for lunch in places that did not want him to sit in their restaurant.
+Martin Luther King Jr. was arrested because the powers that be thought he did do something wrong, leading a Good Friday Demonstration, not because he had something to hide. He did not hide his identity. How could he given the issues he protested? He wanted the right to sit in a restaurant and pay for lunch in places that did not want him to sit in their restaurant. Protesting was his only option because he could not selectively reveal himself to the world in meatspace. We should take measures to selectively reveal our transactions in meatspace as long as we can.
 
-Many people think payments are unimportant, but I disagree. Payment systems are designed to favor some people more than others. You never know what people will be targeted in the future. Since we all may ve targets given a change in the political winds, we all need. While not perfect, the lightning netork can help us achieve more privacy.
+Many people think payments are unimportant, but I disagree. Payment systems are designed to favor some people more than others. You never know what people will be targeted in the future. Since we all may ve targets given a change in the political winds, we all need. While not perfect, the lightning network can help us achieve more privacy.
+
+
 
 Note, the links in this chapter are not affiliate links.
+
+
+
+₿logging ₿itcoin 
+[848,231](https://timechaincalendar.com/en/block/848231 )
+[debtclock](https://www.usdebtclock.org/)
+
+[Support My Work Using The Value 4 Value Model](https://pay/coinos.io/BloggingBitcoin)
+
+https://nostree.me
