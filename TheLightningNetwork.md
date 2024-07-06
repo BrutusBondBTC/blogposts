@@ -1,49 +1,85 @@
 
 # The Lightning Network
-(First Draft)
-Writing about the lightning network is a lot like how Satoshi described writing about bitcoin, "bloody hard." There are several options. Each of these options has it's own set of trade offs. If I lived in a perfect world, I would spend my days suning my balls, eating tomohawk steaks for breakfast, and every single sat would be self-soverign--but this is not a perfect world. For example, I cannot sun my balls at work. I also cannot send a bitcoin transaction lower than the dust limit which is about 500 sats or so. therefore, any on-chain transaction below 500 sats is unspendable. That's about 31 cents at todays prices. This is not FUD like the con-artists selling alts would have you believe. We've known this for a long time. Satoshi wrote this in 2010:
+
+(1.5 Draft)
 
 ["Bitcoin isn't currently practical for very small micropayments. Not for things like pay per search or per page view without an aggregating mechanism, not things needing to pay less than 0.01. The dust spam limit is a first try at intentionally trying to prevent overly small micropayments like that. Bitcoin is practical for smaller transactions than are practical with existing payment methods. Small enough to include what you might call the top of the micropayment range. But it doesn't claim to be practical for arbitrarily small micropayments."]([Flood attack 0.00000001 BC](https://bitcointalk.org/index.php?topic=287.msg7524#msg7524))
 
-The lightning network fixes this, but this is not a magic bullet. If the goal is to have 8 billion people use the ligntning network on their own computer, with their own [UTXO's]([UTXO Model: Definition, How It Works, and Goals](https://www.investopedia.com/terms/u/utxo.asp)) without any [hard forks]([Hard Fork: What It Is in Blockchain, How It Works, and Why It Happens](https://www.investopedia.com/terms/h/hard-fork.asp))--we might not be able to achieve this. If the goal is to make micropayments possible, then the lightning helps us achieve this goal. How can we reconcile this with our first principle, the first sentence of the bitcoin white paper? ** "A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution."** I don't have the silver bullet. There is no perfect answer. There are trade-offs. Some are not willing to abdacate any self-soverignity. I respect that, but I have chosen a different security model. I wish I could attribute this idea to the person who I met at a conference who told this to me becvause it's a brilliant idea. I just don't know this guys name, but he gave me the best answer to this problem. I will do my best to paraphrase this anon's advice.
+The lightning network fixes this, but this is not a magic Internet money bullet. If the goal is to have 8 billion people use the ligntning network on their own computer, with their own [UTXO's]([UTXO Model: Definition, How It Works, and Goals](https://www.investopedia.com/terms/u/utxo.asp)) without any [hard forks]([Hard Fork: What It Is in Blockchain, How It Works, and Why It Happens](https://www.investopedia.com/terms/h/hard-fork.asp))--we might not be able to achieve this. If the goal is to make micro-payments possible, then the lightning helps us achieve this goal. How can we reconcile this with our first principle, the first sentence of the bitcoin white paper? 
 
-When talking about the bitoin, peer-to-peer electronic cash system, our threat model must be super paranoid. Fort Knox does not have the security to prevent double spending. The bitcoin peer-to-peer electronic cash system is 10,000X better than the Fort Knox security model. We might say the current financial system is just a bailout that began in 1971 when Nixon "temporarily" took the US off the gold standard. The bailout Satoshi wrote about in the genesis block was a bailout of the entire fiat financial system. I can't speak for Satoshi, but it appears he intended to solve the double spending problem in response to the systematic threat posed by a credit based fractional reserve system. There is a big difference in the security needs of a global payment system vs. $100 of paper fiat in your wallet.
+**"A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution."** 
 
-Say your phopne cost 1,000. You are willing to risk 1,000.00 on a phone. What if your phone accidently get's flushed down the toilet or crack the screen? This is an inherrent risk of having a phone. You could be out a thousand bucks with a slip of a grip. You can mitigate this risk, by using a waterproof phone or shoving it in a bowl of rice, but that never works for me. If my $1,000 phone dies, I'll be a little pissed. I gurantee I will yell some of my favorite curse words to make my self feel better, but it's not a catastrophy. It's a donation to the network. I'll live. I will be able to buy those sats back.
+I don't have the bitcoin because silver sucks bullet. There is no perfect answer. There are trade-offs. Some are not willing to abdicate any self-sovereignty. I respect that, but I have chosen a different security model. I wish I could attribute this idea to the person who I met at a conference who told this to me because it's a brilliant idea. I just don't know this guys name, but he gave me the best answer to this problem. I will do my best to paraphrase this anon's advice. **If you lose your phone, you're out a thousand bucks, but it's not the end of the world.**" Most of us have a phone. Most of us can replace our phone if we lose it. My phone cost $150, so maybe I should keep no more than $150 on a custodial wallet. If yo have a fancy-ass iPhone 3000, maybe you can risk more. It's a little subjective, but a good rule of thumb is: **Make sure the sats on a custodial wallet are not worth more than your phone**. 
 
-Like I said, this was not my idea, but it's a perfect analogy. It is possible to run your own lightning node, but you can still lose sats. It is a lot easier to
+When talking about the bitoin, peer-to-peer electronic cash system, our threat model must be super paranoid. Fort Knox does not have the security to prevent double spending. The bitcoin peer-to-peer electronic cash system is 10,000X better than the Fort Knox security model. We might say the current financial system is just a bailout that began in 1971 when Nixon "temporarily" took the US off the gold standard. The bailout Satoshi wrote about in the genesis block was a bailout of the entire fiat financial system. I can't speak for Satoshi, but it appears he intended to solve the double spending problem in response to the systematic threat posed by a credit based fractional reserve system. **There is a big difference in the security needs of a global payment system vs. $100 of paper fiat in your wallet**. There is also a big difference between $150 and your entire life-savings.
+
+## Running Your Own Lightning Node Is Reckless
+
+It is possible to run your own lightning node, but you can still lose sats. I lost sats running my own node. It's a lot of work, some say running one properly is a full time job. It's not worth spending 40 hours a week on running a ligntning node unless you are making a living doing it. 
+
+Running a Lightning node is feasible, but you need to be careful and don't expect to make tons of money with routing fees. You also need to back it up regularly. This process is beyond the scope of this guide, but there are some wallets like Phoenix, Zuess, and Mutiny that allow you to run a node in the cloud. It involves some trade-offs, but these tend to be easier. Phoenix is great, but requires a VPN to download from normie stores. You can still use it if you know how to install apk files on Android.
+
+### Trusting Financial Institutions Works For Most Transactions
 
 "Commerce on the Internet has come to rely almost exclusively on financial institutions serving as trusted third parties to process electronic payments. **_*While the system works well enough for most transactions, it still suffers from the inherent weaknesses of the trust based model_**.""
 
-Emphasis added my the author. A custodial model works for most transactions. There is some risk of rug-pull with custodial lightning addresses, but these risks can be mitigated by limiting the amount of sats you keep on them. If this is something that you are more concerned with, you can always run your one node. Consider your goals, however. Are you concerned with getting rug-pulled? What are the odds that you will rug-pull yourself. I lost 800k sats running my own node. I had no trust or run a cloud node that makes you un-ruggable.
+Emphasis added my the author. A custodial model works for most transactions. There is some risk of rug-pull with custodial lightning addresses, but these risks can be mitigated by limiting the amount of sats you keep on them. If this is something that you are more concerned with, you can always run your one node. Consider your goals, however. Are you concerned with getting rug-pulled? What are the odds that you will rug-pull yourself. I lost 800k sats running my own node. 
 
-Since custodial solutions work fine most of the time, I am willing to risk a small percentage of my net worth by using them. This is no trustless, but it is trust memorized. From there, we can choose our lightning wallet based on our needs. When I started writing this guide, my bias got the best of me. We must earn KYC free sats under all circumstances. That's the way bitcoin should be, fuck the world. The more I thought about it, the more my position has evolved.
+Since custodial solutions work fine most of the time, I am willing to risk a small percentage of my net worth by using them. This is no trustless, but it is trust minimized. From there, we can choose our lightning wallet based on our needs. When I started writing this guide, my bias got the best of me. We must earn KYC free sats under all circumstances. That's the way bitcoin should be, FTW. The more I thought about it, however, the more my position evolved. The main issue with not trusting anyone is you need to trust yourself. If you do not trust yourself with runnign a lightning node, I see nothing wrong with trusting someone else with a couple hundred bucks worth of sats. Could you get rug-pulled? Of course, but you can also rug-pull yourself.
 
 If you're just shitposting on nostr and earn a few thousand sats per month, minibits.cash is a custodial wallet that integrates chaumian e cash and the lightning network. The CEO of Coinkite, NVK, calls chumian eCash an honest shitcoin. This is a good way to look at it. Keeping my life savings on minibits is a dumb-ass idea, but it's not worth spending the time learning how to run your own lightning node to protect 5,000 sats. For one thing, you spend 50x the price of 5,000 sats on the cheapest refurbished Dell computer Amazon has to offer. On top of that, you can just as easily rug-pull yourself in a trustless manner. Don't Trust, Verify is important, but the lightnibg network os reckless and "Don't trust, oh shit!" is a real risk on the lightning network. Ask me how I know.
 
-KYC services are very unpopular among hardcore bitcoiners. I won't quote the first line of the bitcoin white paper again. You should have it memorized by now. KYC/AML does not protect the bitcoiner. It protects governments from anti-rug pull technology. Banks and exchanges cannot protect our data. Giving someone our address to pull a 6102 style atrack is not in our best interest, nor does it help with a 10 wrench attack. It only helps the government collect taxes like that fat bear in Disney's Robin Hood. If you lose your sats due to a 10.00 wrench attack, the government can do nothing for you. Even if the FBI catches the culprit, the FBI still cannot retrieve your stolen sats from the perpetrator without the keys.
 
-Libertarians love to say the government is like the mafia. If you've ever see the move Goodfellas, you know how this organization works. A business owner pays the mafia for protection services. The mafia expects payment every month.
-
-"Fuck you, pay me."
-
-If someone trashes your place, one of their associates will straighten him out. The mafia may be an illigitimite business, but it is a protection racket. They still offer a protection service, regardless how you feel about the ethics of their business practices. The government also collects taxes for services. Even the most arduant anarchist recognizes we need security. Maybe they prefer private cops at Disneyland to government cops, but protection is necessary for society to function.
-
-KYC/AML claims to offer protection for the consumer. They use the phrase, "regulatory clarity" to make you feel as if these services protect the consumer, but they are powerless to recover stolen bitcoin. All they can do is throw you in a cage for tax evasion. They cannot use the proceeds from capital gains tax to protect you from theives. Therefore, KYC/AML laws collect data that can only be used against the humble sat stacker. These laws do nothing to protect property rights if your bitcoin is stolen.
-
-The situation changes if your threat model changes. For example, I know a guy who accepts bitcoin at his brewery using Aqua wallet. He only accepts bitcoin on Thursday because he has to be there to accept payments. He cannot just leave a phone at the brewery. Do you see why?
-
-If a rogue employee, Eli Embezzle, decides to send the sats to his own wallet, the Brewer is out of luck. Perhaps the sats are KYC free, but they no longer remain under his control. Using KYC free bitcoin this way is counter intuitive to the KYC free ethos, but he would be better off using the Strike API than Aqua wallet. The Strike API does require KYC, but it can now be used with BTCpayServer if you have the right plugin. The brewer can now accept bitcoin when he is not there by revoking payout permisdions. Tgat way, Eli can take bitcoin payments, but is unable to spend the Brewers sats. He must still trust Strike not to rug-pull him, but even Satoshi mentioned this is an improbable event. Besides, if he sweeps his wallet to his own wallet every night, how much damage could Strike do anyway?
-
-This may no protect the Brewer from executive order BTC6102, but it helps prevent embezzlement which is more likely to happen. The KYC/AML still only protects the government, but the Strike API can protect the brewer.
 
 ## Choosing A Lightning Wallet
 
-I cannot recomend any one wallet. I have my own preferences. I tried writing a couplw guides on specific wallets. The first one was Wallet of Satoshi, but they left the US market. They didn't rug-pull anyone, but if you lose your phone and don't know how to use a VPN, you'll lose your sats. I planned on adding this [Mutiny tutorial](#), but they are now having DNS issues. DNS has nothing to do with bitcoin, except lightning addresses don't work when the powers at be revoke your permission to use a given domain.
+![lnaddresses](https://i.nostr.build/romm3.png)
 
-Although, this landscape changes too much to make recomendations, I have decided to write some loose guidelines based on some assumptions. This assumes 1,000 loss will not be catostropic for you and your family. This may or may not be the case. I often hear most American's cannot afford a 400 emergency. If that's you, you'll need to adjust these recomendations. Conversely, Michael Saylor has enough money to push a button and have a drown fly a new iPhone to him anywhere in the world. He might have a thousand bucks in couch change and not even notice if he lost that much.
+I cannot recommend any one wallet. I have my own preferences. The issue is custodial wallets get taken down or bugs are found, or maybe fee increases make awesome wallets less useful. You should do your own research. I recommend starting your quest for a lightning wallet here: https://lightningaddress.com. In this section I will give my best shot at explaining the advantages and disadvantages of each of these wallets.
 
-These are guidelines designed to show you the way I think about security. I'm self-taught. I never went to cybersecurity school, but I find that it helps to set certain thresholds for security. Since these tbreasholds are subjective, it is impossible to write a one size fits all guide. That's why these are guidelines, not a one stop shop solution. I also use USD because most people understand what that means in 2024. In ten years, $1,000 might be a trip to the grocery store, but for context, a thousand bucks can still buy you a nice phone.
+
+### Zebedee
+
+### BTCPay
+
+### LNMArkets
+
+### Bipa
+
+### FastBotcpoms
+
+### Spark Wallet
+
+### Coinos
+
+### Ligntning Tip Bot
+
+### Blink
+
+### GetAlby
+
+
+### Wallet of Satoshi
+
+### Noah
+
+### Bitnob
+
+
+### Bookmark
+
+### Satoshi Lightning
+
+
+### Stacker News
+
+
+
+### NiceHash
+
+
+
+
 
 ### < The Cost Of Replacing Your phone.
 
