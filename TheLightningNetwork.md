@@ -1,7 +1,7 @@
 
 # The Lightning Network
 
-(1.5 Draft)
+(2nd Draft)
 
 ["Bitcoin isn't currently practical for very small micropayments. Not for things like pay per search or per page view without an aggregating mechanism, not things needing to pay less than 0.01. The dust spam limit is a first try at intentionally trying to prevent overly small micropayments like that. Bitcoin is practical for smaller transactions than are practical with existing payment methods. Small enough to include what you might call the top of the micropayment range. But it doesn't claim to be practical for arbitrarily small micropayments."]([Flood attack 0.00000001 BC](https://bitcointalk.org/index.php?topic=287.msg7524#msg7524))
 
@@ -40,6 +40,7 @@ I cannot recommend any one wallet. I have my own preferences. The issue is custo
 
 ### Zebedee
 
+
 ### BTCPay
 
 ### LNMArkets
@@ -50,7 +51,6 @@ I cannot recommend any one wallet. I have my own preferences. The issue is custo
 
 ### Spark Wallet
 
-### Coinos
 
 ### Ligntning Tip Bot
 
@@ -79,18 +79,24 @@ I cannot recommend any one wallet. I have my own preferences. The issue is custo
 
 
 
+#### Accept Bitcoin Like Paper Cash
 
 
-### < The Cost Of Replacing Your phone.
+### Coinos
 
-If I had less than a 1,000 worth of sats, I wouldn't mind using any of the options on [https://lightningaddresses.com](https://lightningaddresses.com) Could the custodial solutions rug-pull you? Yes, but like that dude at the conference said, I could drop my phone in the ocean. I won't be happy about it, but it's not the end of the world. You could also run a fat lightning channel for a thousand bucks. If you want to be self-sovereign and have the time, go for it. Use Bitcoin Core or LND and go to town. Get a ligghtning address with BTCpayServer. The one-click option on Lunanode is the easiest way to do so, but it costs about 4.00 per month.
+I do not know if the powers that be think using bitcoin on the lightning network is legal or illegal. I do know that [privacy is necessary for an open society](#). If we wish to maintain an [open society](#), we must preserve privacy. Lightning is a step in the right direction, but it is not 200 proof private. It will give you privacy from the banks and credit cards though.Do you want corporations to know everything you buy? But I'm not doing anything wrong so I don't have anything to hide. Even if you don't shop dildos.com, bullets.com, or arbortions.com, this informatioin may still be used against you. Everytime you swipe your card, a bank gets information to sale. Everytime you buy trinket on Amazon, a bank sells an ad for that trinket like an angel gets it's wings everytime a bell rings. The lightning network fixes this.
 
-You can also run your own node. The most popular options are Start9 and Umbrel. At the time of this writing, you can pick up an Umbrel for 400 and Start 9 for 600. You can also use a refurbished computer for about a hundred bucks if you know what you're doing. There are also hybrid models that allow you to hold your own keys using a lightning service provider, but the availability will vary based on your local jurisdiction. For example, many of these companies will now operate in the United States due to draconian regulatory enforcement. The Samourai devs were controversial. They made many enemies. To be honest, they could be dicks at times, but in my opinion they did not deserve to be arrested on conspiracy charges. They allegedly conspired to launder money or some shit. I don't know. I'm not a lawyer, but from my perspective they did one thing that the US government considered to be an illegal act: Write code. This is the one thing each of these wallets have in common. They are all code.
 
-![PGP Book](https://i.thriftbooks.com/api/imagehandler/m/CBFB1A1800D84E0DC62EF565B9EC107D21119457.jpeg)
 
-[Phil Zimmerman wrote code for PGP](http://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html). The US Government thought this was dangerous and they put him on trial. This is one of my favorite stories of regulatory over reach and I've written about it before, but Phil Zimmerman is a smart mother fucker. He knew code was speech. HE also knew the bill of rights had another powerful first sentence. "Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances." I hoped this would be enough to protect people who write code in the United States, but It looks as though I may have been wrong. It's too early to tell and like I said, I'm not a lawyer.
+We should use it anyway, especially in a world so preoccupied with identity politics. In "A Letter From A Birmingham Jail," Martin Luther King Jr. wrote:
+ 
+`"I would be the first to advocate obeying just laws. One has not only a legal but a moral responsibility to obey just laws. Conversely, one has a moral responsibility to disobey unjust laws. I would agree with St. Augustine that 'an unjust law is no law at all."`
 
-I do not know if the powers that be think using bitcoin on the lightning network is legal or illegal. I do know that privacy is necessary for an open society. If we wish to maintain an open society, we must do our best to preserve it. Lightning is a step in the right direction, but it is not full proof. We should use it anyway, especially in a world so preoccupied with  identity politics. Martin Luther King Jr. once wrote, "I would be the first to advocate obeying just laws. One has not only a legal but a moral responsibility to obey just laws," he wrote. "Conversely, one has a moral responsibility to disobey unjust laws. I would agree with St. Augustine that 'an unjust law is no law at all.'" Martin Luther King Jr. is the quintessential example as to why privacy is necessary in the electronic age. You cannot hide your identity in meatspace. You must reveal yourself. People often think people wearing masks are suspicious. They assume they must be doing something wrong, but the reality is--People judge you based on your appearance. If you don't wear the right clothes, drive the right car, have the right gentalia, the right pigmentation--You could be labeled a persona non-grata--banished from a portion of society. 
+![MLKJr](http://cdn.history.com/sites/2/2014/01/mlk-in-birmingham-jail.jpg)
+Martin Luther King Jr. is the quintessential example as to why privacy is necessary in the electronic age. You cannot hide your identity in meatspace. [J. Edgar Hoover prohibited Martin Luther King Jr.'s privacy](https://time.com/5930571/martin-luther-king-jr-fbi/). **Alphabet government organizations like to watch protestors**. CBDC's might be a political talking point, but credit cards give governments all the data they need to track protestors. 
 
-"But I didn't do anything wrong so I have nothing to hide."  Martin Luther King Jr. was arrested. What was he arrested for? The powers that be thought he did do something wrong, [leading a Good Friday Demonstration](https://www.history.com/news/kings-letter-from-birmingham-jail-50-years-later).  He wrote a powerful essay in jail. The law is concerned with might, not wrong or right.  This happens again and again. Muslims get put on no-fly lists, black people are sent to the back of the bus, Japanese get sent to internment camps. From time to time, people people are massacred because of their religion. People who are not doing anything wrong can suddenly become suspicious for being nothing more than their identity and the state is not your only problem. Some women get stalked with their geo-location. You can justify using a custodial KYC'd service here and there, but privacy is a human right. We should not expose those who wish to protect that right weather we are doing anything wrong or not.
+People often think people wearing masks are suspicious.  They assume they must be doing something wrong, but the reality is--People judge you based on your appearance. If you don't wear the right clothes, drive the right car, have the right gentalia, the right pigmentation, political ideology, or nationality--You could be labeled a persona non-grata--banished from a portion of society.
+
+"But I didn't do anything wrong so I have nothing to hide." Martin Luther King Jr. was arrested because the powers that be thought he did do something wrong, leading a Good Friday Demonstration, not because he had something to hide. He did not hide his identity. How could he given the issues he protested? He wanted the right to sit in a restaurant and pay for lunch in places that did not want him to sit in their restaurant.
+
+Many people think payments are unimportant, but I disagree. Payment systems are designed to favor some people more than others. You never know what people will be targeted in the future. Since we all may ve targets given a change in the political winds, we all need. While not perfect, the lightning netork can help us achieve more privacy.
