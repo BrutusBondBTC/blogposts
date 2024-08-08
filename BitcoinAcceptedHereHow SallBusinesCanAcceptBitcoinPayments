@@ -1,0 +1,89 @@
+# Bitcoin accepted Here How Small Business Can Accept Bitcoin For Goods And Services.
+
+I began writing this blog before zaps existed. I used the LNBits demo version to create a tip jar I added to the end of my blogs on Ghost. I didn’t make a ton of sats, but it felt great to get tips every now and then. We will get back to this tip jar in a minute, but in the beginning, I wrote about my half-assed attempts to orange pill merchants at my local farmers market. I didn’t have a plan. I just walked up to random women selling zucchini and asked, “do you accept bitcoin?” 
+
+Out of a hundred people I asked, only one person said yes. 
+
+I now to to a brewery that accepts bitcoin using the [Aqua Wallet](https://flare.pub/w/naddr1qqrhym28xpxrjvqzyp6m7g6nrt5lnrrzn9d6quv3ujyw44r4jafhr43a0h75d00ph75f2qcyqqqgtwc96yw37). This works, but we haven't figured out how to allow him to accept bitcoin when the owner of the brewery isn't there. I think I found the answer. The brewer can print out a QR code with a single Liquid address. Anyone with the address can see the amount of fees paid on each transaction. They will see how many transactions were associated with this address, but they won't be able to see the amounts of the transaction. The butcher can buy a beer using this address. The baker can also buy a beer with this address. The brewer knows how much the baker and the butcher paid, but the baker cannot see the amount the butcher paid and vice-versa. 
+
+The employees will also not be able to see how much customers pay, but the baker can reveal the amount by clicking the View unblinded transaction in Explorer.
+
+![unblinded transaction button](https://i.nostr.build/pu1uc3Pqli1ghKtP.png)
+
+The amount paid is shown on the sent page, so the bartender(an employee of the brewer) can verify the payment went through as well as the total amount. Of course the amoutn is denominated in L-BTC. If the bartender needs to know how much this amount of sats is worth in dirty fiat, she can use the sats converter webpage from [plebnet.dev](https://rates.plebnet.dev/). In this example, 1,838 sats equals $1.07 at the time of this writing. We simply convert the decimal to sats by removing all the zeros. This is very easy and requires very little technical know-how.
+
+![sats converter](https://i.nostr.build/4CpesVYyygN963MG.png)
+
+## Coinos
+
+We can also create a Point of Sale Service. [Coinos](https://coinos.io) is the easiest way to do this and they charge a very small fee.  also creates a nostr key. You could use this to advertise your business on nostr, a decentralized communications protocol where a lot of people who like spending bitcoin on the Internet hang out. You can also use Coinos to obtain a lightning address. Lightning addresses look like an email address, but people send you [sats](https://www.kraken.com/learn/what-are-bitcoin-satoshis-sats) instead. Here is a 16 minute video I created to teach you how to use Coinos as a bitcoin payment terminal. Coinos
+
+TODO ADD VIDEO
+
+### BTCpayServer
+
+BTCpayServer let's you set up bitcoin wallets in several interesting ways. You can use Greenlight to create a self custodial lightning wallet using a key made of 12 valid BIP39 words(also known as a regular bitcoin wallet). There's no need to find liquidity or run any specialized hardware. I suppose you don't even need to run a node, but you should do that anyway. The easiest way to set up BTCpayServer is to deploy it on [LunaNode](https://docs.btcpayserver.org/Deployment/LunaNode/). This is my favorite way to run it because it has the best uptime and gives me the least headaches. It costs about $15.00 per month which adds up to $180 per year. That get's expensive over a while.
+
+You can also run it on a $400 computer from [Umbrel](https://umbrel.com/) too. I can only get the payments to work on my local network and TOR however. I learned how to host it on the clearnet(also known as the normal Internet) using CloudFlare, but the payments won't work on BTCpayServer for some reason.
+
+I was also able to run LNBits on the [clearnet using Start9](https://habla.news/u/bloggingbitcoin@iris.to/how-to-host-start9-services-on-the-clearnet) but this instance does not allow us to install the required plugins we need to run these fancy nodes in the cloud. It is the same instance that you see on the BTCpayServer Demo site. I'm not sure why they are different. This is not a complaint My Start9 is a bad ass computer. It also lets me host websites out of my closet on the clearnet. 
+
+BTCpayServer has several interesting features.
+
+- Sell downloadable tutorials
+- Instantly convert bitcoin to dollars(or your local national currency) using the Strike plugin
+- Run a Custodial Lightning Wallet in the cloud using Greenlight.
+- Create a store on Shopify or WordPress
+- Automatically delete customer information every two weeks.
+
+BTCpayServer is for those who want to run a bad ass bitcoiner business for bitcoiners by bitcoiners.
+
+**How To Use BTCpayServer with the Strike API**
+
+https://flare.pub/w/naddr1qqr4q3m9fe34wdgpzpmhxue69uhkummnw3ezuamfdejsygr4hu34xxhflxxx9x2m5pcereygat28t96nw8tr6l0ag677r0agj5psgqqqskasw0nrwh
+
+
+
+
+
+**How To Use BTCpayServer with Greenlignt with the Breez Plugin**
+
+
+https://flare.pub/w/naddr1qqr4jsmv2e6n2tgpzpmhxue69uhkummnw3ezuamfdejsygr4hu34xxhflxxx9x2m5pcereygat28t96nw8tr6l0ag677r0agj5psgqqqskassqw0d5
+
+
+## LNBits
+
+LNBits has a new feature. It allows us to sell our software as a service. We can become an uncle Jim. I run an instance of LNBits using an API from getalby.  I also have the GetAlby Hub, but have not switched API's yet. We can also use other API's like from ZBD or opennode. I run mine on Start9 and it works over the clearnet, although I hope to use a reverse TOR proxy soon. It's easy to run on an old Linux computer. They have [great docs](https://github.com/lnbits/lnbits/blob/main/docs/guide/installation.md) If you don't want to bother with that, you can also run this on Start9 or Umbrel.
+
+**Sell Extentions As A Service**
+
+The most interesting thing about LNBits is that it allows you to sell software as a service. This is a little known fact, but it's an interesting way to turn our nodes into a software as a service business. Bitkarrot mentioned this on this episode of Bitcoin Audible. Ben Arc also announced it on Citadel Dispatch. I'm going to sell extensions for 10,000 sats. I don't expect to make much money. I would consider myself lucky if I earned enough to buy a cup of coffee, but this is an interesting concept. Keep in mind, this is a custodial service. I use an Alby API. Don't keep to many sats on this. Treat it like a cash register. You You should withdraw your sats to self custody every day like a business empty's it's cash register out every day and puts the cash in a safe.
+
+**LNBits POS Tutorial**
+
+https://flare.pub/w/naddr1qqrkcaj5xqchyugzyp6m7g6nrt5lnrrzn9d6quv3ujyw44r4jafhr43a0h75d00ph75f2qcyqqqgtwcr947q9
+
+
+
+If you want to accept bitcoin at a shop, try it [here](https://lnbits.blogging-bitcoin.com/). 
+
+
+₿logging ₿itcoin 
+[848,231](https://timechaincalendar.com/en/block/855941)
+
+[debtclock](https://www.usdebtclock.org/)
+
+All my blogs are available for free and written using under the [CCO-1.0](https://github.com/BrutusBondBTC/blogposts?tab=CC0-1.0-1-ov-file#readme) licence.
+
+If found value in this please consider giving your ⏲️ [time](**https://i.nostr.build/O4gMA.png**) , 🤹[talent](https://i.nostr.build/O4gMA.png), or treasure ⚡[Treasure](https://coinos.io/BloggingBitcoin/receive) in return. 🧡 
+
+
+
+📧[Subscribe on Substack](https://substack.com/@bloggingbitcoin) or
+🍐[Join my Keet Room If You Prefer To Learn About New Blogs With No Email Signup](https://gasolin.idv.tw/keetlink/#key=yry3n55uafwewao3kq47ia55zu45pcsddxmnggzahg51q18p75e4rxf1oofsf1kexxyq9yjgkr58i85rbox5j5w47bz34xkuppihb3bw5y&title=Subscribe%20To%20Blogging%20Bitcoin)
+
+🫙 [Tip Jar](https://lnbits.blogging-bitcoin.com/tipjar/1)
+
+🛒[Shop The Elliptic Curve Economy](https://habla.news/u/bloggingbitcoin@iris.to/shop-the-bitcoin-circular-economy)
+
